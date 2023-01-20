@@ -7,7 +7,7 @@
         <input type="checkbox" id="chk" aria-hidden="true">
 
             <div class="signup">
-                <form>
+                <form @submit="postData" method="post" >
                     <input type="text" v-model="name" name="txt" placeholder="Name" required="">
                     <input type="email" v-model="email" name="email" placeholder="Email" required="">
                     <input type="password" v-model="password" name="pswd" placeholder="Password" required="">
@@ -20,7 +20,7 @@
                     <label for="chk"  aria-hidden="true">Login</label>
                     <input type="email"  v-model="email" name="email" placeholder="Email" required="">
                     <input type="password"  v-model="password" name="pswd" placeholder="Password" required="">
-                    <button v-on:click="signup"> >Login</button>
+                    <button v-on:click="signup"> Login</button>
                 </form>
             </div>
     </div>
@@ -33,6 +33,7 @@
 </template>
 
 <script>
+import console from 'console';
 import signup from './components/signup.vue'
 export default {
   name: 'App',
@@ -40,17 +41,21 @@ export default {
     signup,
     data(){
       return {
-        name: "",
-        email: "",
-        password: ""
+        posts:{
+        name: null,
+        email: null,
+        password: null
+        } 
+        
       }},
       
     methods: {
-        signup()
-         {
-            console.warn("signup",this.name,this.email.this.password)
-         }} 
-  }
+        postData(e){
+        console.warn(this.posts)
+         e.preventDefault();
+         
+        } 
+  }}
  
 }
 </script>
