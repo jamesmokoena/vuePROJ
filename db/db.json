@@ -1,0 +1,30 @@
+{
+
+    "users": [
+          {
+            "email": "mokoenantethe@gmail.com",
+            "name": "james",
+            "password": 9876,
+            "id":1
+           
+           },
+           {
+            "name": "John Doe",
+            "email": "johndoe@example.com",
+            "password": "P@ssword1"
+        },
+        {
+            "name": "Jane Smith",
+            "email": "janesmith@example.com",
+            "password": "S3cureP@ss"
+        },
+        {
+            "name": "Bob Johnson",
+            "email": "bobjohnson@example.com",
+            "password": "B0bP@ss"
+        } 
+    ]
+      
+
+
+}
