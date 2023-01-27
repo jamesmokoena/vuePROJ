@@ -11,6 +11,7 @@
     "axios": "^1.2.3",
     "console-browserify": "^1.2.0",
     "core-js": "^3.8.3",
+    "firebase": "^9.16.0",
     "vue": "^3.2.13",
     "vue-axios": "^3.5.2",
     "vue-router": "^4.1.6"
@@ -43,5 +44,17 @@
     "last 2 versions",
     "not dead",
     "not ie 11"
-  ]
+  ],
+  "description": "## Project setup ``` npm install ```",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesmokoena/vuePROJ.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamesmokoena/vuePROJ/issues"
+  },
+  "homepage": "https://github.com/jamesmokoena/vuePROJ#readme"
 }
